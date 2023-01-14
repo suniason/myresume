@@ -9,7 +9,7 @@ const Intro : React.FC = () => {
             <IntroWrapper>
                 <NameWrapper>
                     <div className="container">
-                        <div className="greet">Hello, I'm</div>
+                        <div className="greet">Hello, I am</div>
                         <div className="name">
                             <span>
                                 Brett Josef C. Galvez

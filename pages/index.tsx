@@ -5,6 +5,7 @@ import Intro from './components/intro'
 import Navbar from './components/navbar'
 import Profile from './components/profile'
 import Skill from './components/skill'
+import Head from 'next/head'
 
 export default function Home() {
   const IntroRef = useRef<null | HTMLDivElement>(null);
@@ -37,7 +38,12 @@ export default function Home() {
   }
 
   return (
+
     <>
+      <Head>
+        <title>Galvez Resume</title>
+      </Head>
+      <div>
       <Navbar clicked={navClicked}/>
       <div ref={IntroRef}>
         <Intro/>
@@ -53,6 +59,7 @@ export default function Home() {
       </div>
       <div  ref={contactRef}>
         <Contact/>
+      </div>
       </div>
     </>
   )

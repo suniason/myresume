@@ -25,16 +25,16 @@ const Contact: React.FC = () => {
                 <ul>
                     <div>CONTACT ME</div>
                     <li>
-                        <a href="https://www.facebook.com/brett.galvez.77" target="_blank">
+                        <a href="https://www.facebook.com/brett.galvez.77" target="_blank" rel="noreferrer">
                             <AiFillFacebook color="#0099ff" size={iconSize}/>
                         </a>
                     </li>
-                    <li><a href="https://github.com/Sunias17" target="_blank">
+                    <li><a href="https://github.com/Sunias17" target="_blank" rel="noreferrer">
                             <AiFillGithub color="#0099ff" size={iconSize}/>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/brett-galvez-718b1324a/" target="_blank">
+                        <a href="https://www.linkedin.com/in/brett-galvez-718b1324a/" target="_blank" rel="noreferrer">
                             <AiFillLinkedin color="#0099ff" size={iconSize}/>
                         </a>
                     </li>
