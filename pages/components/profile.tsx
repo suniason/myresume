@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ProfileWrapper } from "../../styles/profile.styled"
 import { Wrapper } from "../../styles/wrapper.styled"
 
