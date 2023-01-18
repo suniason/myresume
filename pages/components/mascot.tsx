@@ -1,3 +1,4 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react"
 import { MascotWrapper } from "../../styles/intro.styled"
@@ -18,7 +19,7 @@ const Mascot: React.FC = () => {
             changeIndex();
         },150);
         return () => clearInterval(interval);
-    },[currentIndex]); //adding the missing dependency
+    },[currentIndex]); 
 
     return(
         <MascotWrapper>
