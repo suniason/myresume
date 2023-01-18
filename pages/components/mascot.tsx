@@ -18,7 +18,7 @@ const Mascot: React.FC = () => {
             changeIndex();
         },150);
         return () => clearInterval(interval);
-    },[currentIndex]);
+    },[currentIndex]); //adding the missing dependency
 
     return(
         <MascotWrapper>
