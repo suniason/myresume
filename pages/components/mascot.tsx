@@ -13,12 +13,12 @@ const Mascot: React.FC = () => {
         setCurrentIndex((currentIndex+1) % wave.length);
     }
     
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(()=>{
         const interval = setInterval(()=>{
             changeIndex();
         },150);
         return () => clearInterval(interval);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[currentIndex]); 
 
     return(
