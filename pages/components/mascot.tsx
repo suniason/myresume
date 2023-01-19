@@ -19,7 +19,7 @@ const Mascot: React.FC = () => {
             changeIndex();
         },150);
         return () => clearInterval(interval);
-    },[currentIndex]); 
+    },[currentIndex, changeIndex]); 
 
     return(
         <MascotWrapper>
