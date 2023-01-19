@@ -1,4 +1,3 @@
-// eslint-disable-next-line react-hooks/exhaustive-deps
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react"
 import { MascotWrapper } from "../../styles/intro.styled"
@@ -14,12 +13,13 @@ const Mascot: React.FC = () => {
         setCurrentIndex((currentIndex+1) % wave.length);
     }
     
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(()=>{
         const interval = setInterval(()=>{
             changeIndex();
         },150);
         return () => clearInterval(interval);
-    },[currentIndex, changeIndex]); 
+    },[currentIndex]); 
 
     return(
         <MascotWrapper>
