@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef , useState} from 'react'
 import Contact from './components/contact'
 import Education from './components/education'
 import Intro from './components/intro'
@@ -37,12 +37,13 @@ export default function Home() {
 
   }
 
-  return (
 
+  return (
     <>
       <Head>
         <title>Galvez Resume</title>
       </Head>
+      <body>
       <div>
       <Navbar clicked={navClicked}/>
       <div ref={IntroRef}>
@@ -61,6 +62,8 @@ export default function Home() {
         <Contact/>
       </div>
       </div>
+      
+      </body>
     </>
   )
 }

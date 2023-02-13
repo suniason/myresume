@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const SkillWrapper = styled.div`
-    text-align: left;
     color: white;
-    margin: 0 .75rem;
     display: grid;
+    text-align: left;
     grid-template-columns: 1fr 1fr;    
     grid-template-rows: 25% 40% 47%;
 
@@ -23,10 +22,15 @@ export const SkillWrapper = styled.div`
         cursor: pointer;
     }
     
+    ul{
+        padding: 0;
+        margin: 0;
+    }
 
     div{
         font-size: 1.5rem;
-        padding: 1rem;
+        padding: 1rem 0;
+        text-align: center;
     }
 
     .one{
@@ -39,6 +43,10 @@ export const SkillWrapper = styled.div`
         font-size: 1.15rem;
         margin: 1rem;
         list-style: none;
+    }
+
+    .two{
+        margin: 0 2rem;
     }
 
     .one div, .three div, .four div{

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { NavbarWrapper } from "../../styles/navbar.styled"
 
 export interface Navigation{
@@ -5,6 +6,7 @@ export interface Navigation{
 }
 
 const Navbar: React.FC<Navigation> = (prop: Navigation) => {
+
     const handleHover = (e:any) => {
         e.target.classList.add('zoom');
         setTimeout(()=>{
@@ -14,20 +16,26 @@ const Navbar: React.FC<Navigation> = (prop: Navigation) => {
     
     return(
         <NavbarWrapper>
-            <span onClick={() => prop.clicked(0)}>
-                <div onMouseEnter={handleHover}>R</div>
-                <div onMouseEnter={handleHover}>E</div>
-                <div onMouseEnter={handleHover}>S</div>
-                <div onMouseEnter={handleHover}>U</div>
-                <div onMouseEnter={handleHover}>M</div>
-                <div onMouseEnter={handleHover}>E</div>
-            </span>
-            <ul>
-                <li onClick={() => prop.clicked(1)}>Profile</li>
-                <li onClick={() => prop.clicked(2)}>Education</li>
-                <li onClick={() => prop.clicked(3)}>Skills</li>
-                <li onClick={() => prop.clicked(4)}>Contact</li>
-            </ul>
+            <nav>
+                <div className="division">
+                    <span onClick={() => prop.clicked(0)}>
+                        <div className="name" onMouseEnter={handleHover}>R</div>
+                        <div className="name" onMouseEnter={handleHover}>E</div>
+                        <div className="name" onMouseEnter={handleHover}>S</div>
+                        <div className="name" onMouseEnter={handleHover}>U</div>
+                        <div className="name" onMouseEnter={handleHover}>M</div>
+                        <div className="name" onMouseEnter={handleHover}>E</div>
+                    </span>
+                </div>
+                <div className="division">
+                    <ul>
+                        <li onClick={() => prop.clicked(1)}>Profile</li>
+                        <li onClick={() => prop.clicked(2)}>Education</li>
+                        <li onClick={() => prop.clicked(3)}>Skills</li>
+                        <li onClick={() => prop.clicked(4)}>Contact</li>
+                    </ul>
+                </div>
+            </nav>
         </NavbarWrapper>
     )
 }

@@ -17,7 +17,16 @@ export const NavbarWrapper = styled.div`
         margin: 0 20% 0 0;
     }
 
-    div{
+    .nav{
+        display: grid;
+        grid-template-column: 
+    }
+
+    .divider{
+        
+    }
+
+    .name{
         font-size: 2.5rem;
         font-weight: 700;
         color: #0099ff;

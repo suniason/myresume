@@ -59,10 +59,10 @@ export const ProfileWrapper = styled.div`
     }
 
     img{
-        width: 15rem;
+        width: 85%;
         pointer-events: none;
         border-radius: 100%;
-        border: #0099ff solid .75rem;
+        border: #0099ff solid .5rem;
     }
 
     .content{

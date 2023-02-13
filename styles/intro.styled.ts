@@ -14,7 +14,7 @@ export const NameWrapper = styled.div`
     display: flex;
     align-items: center;
     height: 60%;
-    margin: 0 0 0 5rem;
+    margin: 2rem 0 0 5rem;
     z-index: 0;
 
     .greet{

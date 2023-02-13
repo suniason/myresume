@@ -5,6 +5,7 @@ export const EducationWrapper = styled.div`
     width: 100%;
     color: #ffffff;
     background: #0099ff;
+    height: fit-content;
 
     h1{
         margin: 3rem 0;
@@ -16,7 +17,7 @@ export const EducationWrapper = styled.div`
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         color: #0099ff;
-        margin: 0 1rem;
+        margin: 1rem 1rem;
     }
 
     span{
