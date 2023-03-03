@@ -16,8 +16,8 @@ const Navbar: React.FC<Navigation> = (prop: Navigation) => {
     
     return(
         <NavbarWrapper>
-            <nav>
-                <div className="division">
+            <nav className="navigation">
+                <div className="division1">
                     <span onClick={() => prop.clicked(0)}>
                         <div className="name" onMouseEnter={handleHover}>R</div>
                         <div className="name" onMouseEnter={handleHover}>E</div>
@@ -27,7 +27,7 @@ const Navbar: React.FC<Navigation> = (prop: Navigation) => {
                         <div className="name" onMouseEnter={handleHover}>E</div>
                     </span>
                 </div>
-                <div className="division">
+                <div className="division2">
                     <ul>
                         <li onClick={() => prop.clicked(1)}>Profile</li>
                         <li onClick={() => prop.clicked(2)}>Education</li>

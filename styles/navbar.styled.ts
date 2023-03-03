@@ -17,17 +17,22 @@ export const NavbarWrapper = styled.div`
         margin: 0 20% 0 0;
     }
 
-    .nav{
-        display: grid;
-        grid-template-column: 
+    .navigation{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
 
-    .divider{
-        
+    .division1{
+        width: 30%;
+    }
+    .division2{
+        width: 60%;
     }
 
     .name{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
         color: #0099ff;
         display: inline-block;
@@ -43,7 +48,8 @@ export const NavbarWrapper = styled.div`
     
     li{
         display: inline-block;
-        padding: 0 2rem;
+        padding: .5rem 2rem;
+        text-align: center;
     }
 
     li:hover{
